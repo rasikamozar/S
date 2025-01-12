@@ -1,214 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
-
-    body {
-        overflow: hidden;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: 100%;
-        background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
-        background-position: center center;
-    }
-
-    .paper {
-        background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
-        background-size: 500px;
-        background-position: center center;
-        padding: 20px 100px;
-        transform: rotateZ(-5deg);
-        box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
-        position: absolute;
-    }
-
-    .paper.heart {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        padding: 0;
-        border-radius: 50%;
-    }
-
-    .paper.image {
-        padding: 10px;
-    }
-
-    .paper.image p {
-        font-size: 30px;
-    }
-
-    img {
-        max-height: 200px;
-        width: 100%;
-        user-select: none;
-    }
-
-    .paper.heart::after {
-        content: "";
-        background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: 150px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        opacity: 0.6;
-    }
-
-    .paper:nth-of-type(3n) {
-        background-position: left top;
-    }
-
-    p {
-        font-family: 'Zeyada';
-        font-size: 50px;
-        color: rgb(0, 0, 100);
-        opacity: 0.75;
-        user-select: none;
-
-    }
-
-    .loveTEXT {
-        font-family: Arial, sans-serif;
-        color: #e91e63;
-        font-size: 36px;
-    }
-
-    .loverbtn {
-        font-size: 20px;
-        padding: 12px 24px;
-        margin: 10px;
-        border: none;
-        border-radius: 20px;
-        background-color: #ff4081;
-        color: #fff;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .btn-group {
-        text-align: center;
-    }
-
-    #popup {
-        display: none;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        display: none;
-        background-color: #fff;
-        border: 1px solid #e91e63;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        font-family: 'Dancing Script', cursive;
-        font-size: 24px;
-        color: #e91e63;
-    }
-
-    #popup.fade-in {
-        animation: fadeIn 0.3s ease;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-</style>
 
 <head>
     <meta charset="UTF-8">
-    <title>From LaduuBaii❤️</title>
-    <link rel='stylesheet'
-        href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>From Sakhii❤️</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap">
+    <style>
+        body {
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: 100%;
+            background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+            background-position: center center;
+        }
+
+        .paper {
+            background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+            background-size: 500px;
+            background-position: center center;
+            padding: 20px 100px;
+            transform: rotateZ(-5deg);
+            box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+            position: absolute;
+        }
+
+        .paper.heart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            padding: 0;
+            border-radius: 50%;
+        }
+
+        .paper.image {
+            padding: 10px;
+        }
+
+        .paper.image p {
+            font-size: 30px;
+        }
+
+        img {
+            max-height: 200px;
+            width: 100%;
+            user-select: none;
+        }
+
+        .paper.heart::after {
+            content: "";
+            background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: 150px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+
+        .paper:nth-of-type(3n) {
+            background-position: left top;
+        }
+
+        p {
+            font-family: 'Zeyada';
+            font-size: 50px;
+            color: rgb(0, 0, 100);
+            opacity: 0.75;
+            user-select: none;
+        }
+
+        .loveTEXT {
+            font-family: Arial, sans-serif;
+            color: #e91e63;
+            font-size: 36px;
+        }
+
+        .loverbtn {
+            font-size: 20px;
+            padding: 12px 24px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff4081;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-group {
+            text-align: center;
+        }
+
+        #popup {
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            background-color: #fff;
+            border: 1px solid #e91e63;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            color: #e91e63;
+        }
+
+        #popup.fade-in {
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+  
     <div id="popup" style="width: 390px;">
         You Don't Have Option...😝😅😎
-        <img src="/public/photo.jpg"
-            style="aspect-ratio: 1/1">
-            Just Kidding...😂😂
-            <a href="first.html">Click me</a>
+        <img src="/public/photo.jpg" style="aspect-ratio: 1/1"> Just Kidding...😂😂
+        <a href="first.html">Click me</a>
     </div>
 
     <div>
-
-        <!-- <a href="https://manaschool.in/"> -->
-        <b class="loveTEXT">You're mine, Okayyyyy?🤨🧐</b>
-        <!-- </a> -->
+        <b class="loveTEXT">Are you readyyyy??🤨🧐</b>
         <div class="btn-group">
             <button id="yes-btn" class="loverbtn">Yes</button>
             <button id="no-btn" class="loverbtn">No</button>
         </div>
     </div>
 
-    <!-- Saravanan Code -->
-    <!-- https://codepen.io/devsaro/pen/wvYPaRg -->
-    <div class="paper heart">
-    </div>
+    <div class="paper heart"></div>
     <div class="paper image">
-        <p><b>Sakhi bahin nahi me Dada Tuzi...😊</b></p>
-        <p><b>pn hath pakadla</b></p>
-        <p><b>ch aahe tre shevat paryant</b></p>
-        <p><b>sath nakii nibhavel 😉✌️</b></p>
-        <p><b> <u>LOVE YOU Dadya...❤️</u></b></p>
+        
+        <p class="p1"> <b>Tresure Hunt hi to khelna haii...</b></p>
+        <p class="p2"><b>to digitally bhi khel sakhte haii...</b></p>
         <img src="" />
     </div>
-   
+
     <div class="paper image">
         <p><b>Muskan ka koi mol nahi hota, </b></p>
-        <p><b> Kuch Rishton ka Tol nahi hota ❤️, </b></p>
+        <p><b> Kuch Rishton ka Tol nahi hota , </b></p>
         <p><b>Dost to mil jate hai har raste par,</b></p>
-        <p><b>Lekin har koi Tumhari tarah <strong>Anmol ❤️</strong>nhi hota</b></p>
-        <p><b><u>My Favourite Person😘</u></b></p>
+        <p><b>Lekin har koi Tumhari tarah <strong>Anmol </strong>nhi hota</b></p>
+        
         <img src="" />
     </div>
     <div class="paper">
-        <p class="p1"> <b>you are the men with</b></p>
-        <p class="p2"><b>Zero men ego 😊</b></p>
         
+        <p> <b>Hope your Special day</b></p>
+        <p><b>is as incredible as you...😇</b></p>
     </div>
     <div class="paper image">
-        <p> <b>Bappa ...Ka...Shukriya !!</b></p>
-        <p><b>Aapko...mera...bhai...banaya...hai..!!🥰</b></p>
-        <p><b>Bhai...ke...roop...mein..!!</b></p>
-        <p><b>Dost...bhi...paya...hai...!!😇</b></p>
+        <p><b>A true and Genuine 😊</b></p>
+        <p><b>friendship like ours </b></p>
+        <p><b>is so strong , meaningful and</b></p>
+        <p><b>long lasting... 😉✌️</b></p>
+        <p><b> <u>Happy Birthday</u></b></p>
+   
         <img src="" />
     </div>
     <div class="paper">
         <p class="p1"><b>Happy Birthday</b></p>
-        <p class="p1"><b>Mr.Khadoos!! </b><span style="color: red !important;">❤️</span></p>
+        <p class="p1"><b>दोस्ता
+        </b><span style="color: red !important;">❤️</span></p>
     </div>
     <div class="paper">
         <p class="p1"><b>Drag the papers to move!</b></p>
     </div>
-    
-    <!-- javascript file -->
-    <!-- <script src="script.js"></script> -->
+
     <script>
         let highestZ = 1;
         class Paper {
@@ -226,15 +212,15 @@
             currentPaperY = 0;
             rotating = false;
             init(paper) {
-                document.addEventListener('mousemove', (e) => {
+                const onMouseMove = (e) => {
                     if (!this.rotating) {
                         this.mouseX = e.clientX;
                         this.mouseY = e.clientY;
                         this.velX = this.mouseX - this.prevMouseX;
                         this.velY = this.mouseY - this.prevMouseY;
                     }
-                    const dirX = e.clientX - this.mouseTouchX;
-                    const dirY = e.clientY - this.mouseTouchY;
+                    const dirX = this.mouseX - this.mouseTouchX;
+                    const dirY = this.mouseY - this.mouseTouchY;
                     const dirLength = Math.sqrt(dirX * dirX + dirY * dirY);
                     const dirNormalizedX = dirX / dirLength;
                     const dirNormalizedY = dirY / dirLength;
@@ -253,8 +239,41 @@
                         this.prevMouseY = this.mouseY;
                         paper.style.transform = `translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) rotateZ(${this.rotation}deg)`;
                     }
-                })
-                paper.addEventListener('mousedown', (e) => {
+                }
+
+                const onTouchMove = (e) => {
+                    if (!this.rotating) {
+                        this.mouseX = e.touches[0].clientX;
+                        this.mouseY = e.touches[0].clientY;
+                        this.velX = this.mouseX - this.prevMouseX;
+                        this.velY = this.mouseY - this.prevMouseY;
+                    }
+                    const dirX = this.mouseX - this.mouseTouchX;
+                    const dirY = this.mouseY - this.mouseTouchY;
+                    const dirLength = Math.sqrt(dirX * dirX + dirY * dirY);
+                    const dirNormalizedX = dirX / dirLength;
+                    const dirNormalizedY = dirY / dirLength;
+                    const angle = Math.atan2(dirNormalizedY, dirNormalizedX);
+                    let degrees = 180 * angle / Math.PI;
+                    degrees = (360 + Math.round(degrees)) % 360;
+                    if (this.rotating) {
+                        this.rotation = degrees;
+                    }
+                    if (this.holdingPaper) {
+                        if (!this.rotating) {
+                            this.currentPaperX += this.velX;
+                            this.currentPaperY += this.velY;
+                        }
+                        this.prevMouseX = this.mouseX;
+                        this.prevMouseY = this.mouseY;
+                        paper.style.transform = `translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) rotateZ(${this.rotation}deg)`;
+                    }
+                }
+
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('touchmove', onTouchMove);
+
+                const onMouseDown = (e) => {
                     if (this.holdingPaper) return;
                     this.holdingPaper = true;
                     paper.style.zIndex = highestZ;
@@ -268,8 +287,28 @@
                     if (e.button === 2) {
                         this.rotating = true;
                     }
-                });
+                }
+
+                const onTouchStart = (e) => {
+                    if (this.holdingPaper) return;
+                    this.holdingPaper = true;
+                    paper.style.zIndex = highestZ;
+                    highestZ += 1;
+                    this.mouseTouchX = e.touches[0].clientX;
+                    this.mouseTouchY = e.touches[0].clientY;
+                    this.prevMouseX = this.mouseTouchX;
+                    this.prevMouseY = this.mouseTouchY;
+                }
+
+                paper.addEventListener('mousedown', onMouseDown);
+                paper.addEventListener('touchstart', onTouchStart);
+
                 window.addEventListener('mouseup', () => {
+                    this.holdingPaper = false;
+                    this.rotating = false;
+                });
+
+                window.addEventListener('touchend', () => {
                     this.holdingPaper = false;
                     this.rotating = false;
                 });
@@ -280,8 +319,6 @@
             const p = new Paper();
             p.init(paper);
         });
-
-
 
         const noButton = document.getElementById("no-btn");
         const yesButton = document.getElementById("yes-btn");
@@ -297,9 +334,7 @@
             popup.style.display = "block";
         });
 
-        // Hide the popup initially
         popup.style.display = "none";
-
     </script>
 </body>
 
